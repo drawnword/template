@@ -1,0 +1,9 @@
+This is a quick and dirty set of skeleton JS, CSS, and markup to enable rapidly building out markup for sites.
+
+Remaining tasks are...
+
+* Create example of all possible HTML content elements, form elements, and jQuery widgets
+* Create Example of all possible/relevant microformats and associated styling
+* Create default styling of afore-mentioned elements
+* Create markup and style standard elements (Header, Footer, Navigation, Comments)
+* Create standard pages (Contact, About, Blog, Blog Post, Bio)
