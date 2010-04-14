@@ -1,0 +1,23 @@
+/* 
+
+This should only contain styles that help drive cleaner print.
+
+ex. display-none, href :after content, etc.
+
+*/
+
+nav {
+  display: none;
+}
+
+a[href]:after {
+  content: " (" attr(href) ") ";
+}
+
+a[href^="/"]:after {
+  content: " (http://www.domain.com" attr(href) ") ";
+}
+
+ul li {
+  list-style-type: circle;
+}
