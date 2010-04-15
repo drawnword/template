@@ -6,3 +6,35 @@ html * {
   font-family: helvetica, arial, sans-serif;
   line-height: 140%;
 }
+
+body {
+  padding: 0 2em;
+}
+
+h1, h2, h3, p, ul, ol, blockquote, code {
+  margin-bottom: .5em;
+}
+
+h1 {
+  font-size: 140%;
+}
+
+h2 {
+  font-size: 120%;
+}
+
+h3 {
+  font-size: 110%;
+}
+
+#header {
+  border-bottom: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 1em 0;
+}
+
+#footer {
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 1em 0;
+}
