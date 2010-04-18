@@ -4,7 +4,13 @@ This should only contain styles that help drive cleaner print.
 
 ex. display-none, href :after content, etc.
 
+More info and advice available at http://www.alistapart.com/articles/goingtoprint/
+
 */
+
+body {
+  font-size: 12pt;
+}
 
 nav {
   display: none;
@@ -15,9 +21,13 @@ a[href]:after {
 }
 
 a[href^="/"]:after {
-  content: " (http://www.domain.com" attr(href) ") ";
+  content: " (http://www.TODO.com" attr(href) ") ";
 }
 
 ul li {
   list-style-type: circle;
+}
+
+.no-print {
+  display: none;
 }
