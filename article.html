@@ -19,6 +19,8 @@
   
   <p>Article Body</p>
 
+  <p>Something with a footnote. <sup><a href="#fn1" id="r1">[1]</a></sup></p>
+
   <figure>
     <img src="/images/Image.png" />
     <figcaption>Caption</figcaption>
@@ -27,8 +29,9 @@
   <footer>
     <p class="byline"></p>
     <ul class="footnotes">
-      <li>Footnote</li>
-      <li>Footnote</li>
+      <li id="fn1"><a href="#r1">[1]</a> This is, naturally, a lie, but paradoxically if it were true he could not say so without contradicting the interviewer and thus making it false.
+      </li>
+      <li>See <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/links.html#footnotes">This section on the WhatWG site about footnotes.</a></li>
     </ul>
   </footer>
 </article>
