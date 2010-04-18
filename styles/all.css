@@ -11,8 +11,8 @@ body {
   padding: 0 2em;
 }
 
-h1, h2, h3, p, ul, ol, blockquote, code {
-  margin-bottom: .5em;
+h1, h2, h3, p, ul, ol, blockquote, code.block, dl, pre, table {
+  margin-bottom: 1em;
 }
 
 h1 {
@@ -56,6 +56,10 @@ q q:before {
 
 q q:after {
   content: "\2019";
+}
+
+code.block {
+  display: block;
 }
 
 del {
