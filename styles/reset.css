@@ -90,7 +90,7 @@ hr {
 input, select {
     vertical-align:middle;
 }
-code, pre, samp, kbd {
+code, samp, kbd, var {
   /* This is needed to fix the monspace text sizing issues. http://meyerweb.com/eric/thoughts/2010/02/12/fixed-monospace-sizing/ */
   font-family: courier, "courier new", monospace, serif!important;
   font-size: 1em!important;

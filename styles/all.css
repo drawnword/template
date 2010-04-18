@@ -32,6 +32,11 @@ abbr, acronym {
   cursor: help;
 }
 
+figure, video, img {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
 blockquote {
   background: #f0f0f0;
   padding: 10px;
@@ -62,11 +67,30 @@ sub, sup {
 }
 
 sub {
-  vertical-align:bottom;
+  vertical-align: sub;
 }
 
 sup {
-  vertical-align:top;
+  vertical-align: super;
+}
+
+table {
+  border: 2px solid #ccc;
+  width: 100%;
+}
+
+table caption {
+  text-align: left;
+}
+
+th {
+  background-color: #f0f0f0;
+  text-align: left;
+}
+
+th,
+td {
+  padding: 2px 5px;
 }
 
 #header {
