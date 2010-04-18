@@ -8,10 +8,19 @@ form {
   margin-bottom: 1em;
 }
 
-div.field {
-  
+.field {
+  margin-bottom: .5em;
 }
 
-div.field label {
+.field label {
+  display: block;
+}
+
+.field span {
+  color: #666;
+  font-size: 90%;
+}
+
+.field > span {
   display: block;
 }

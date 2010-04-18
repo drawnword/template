@@ -21,6 +21,12 @@
     </div>
 
     <div class="field">
+      <label for="password-input">Password Input</label>
+      <input type="password" id="password-input" required="required" />
+    </div>
+
+
+    <div class="field">
       <label for="email-input">Email Input</label>
       <input type="email" id="email-input" required="required" />
     </div>
@@ -36,12 +42,13 @@
     </div>
 
     <div class="field">
-      <label for="number-input">Number Input</label>
+      <label for="number-input">Number Input <span>(Required)</span></label>
       <input type="number" id="number-input"
              min="0"
              max="10"
              step="1"
              value="6" />
+      <span>Help text.</span>
     </div>
     
     <div class="field">
@@ -56,6 +63,18 @@
     <div class="field">
       <label for="search-input">Search Input</label>
       <input type="search" id="search-input" placeholder="Search with Words" />
+    </div>
+
+    <div class="field">
+      <label for="textarea-input">Textarea</label>
+      <textarea id="textarea-input"></textarea>
+    </div>
+    
+    <div class="field">
+      <input type="radio" />
+      <input type="radio" />
+      <input type="radio" />
+      <input type="radio" />
     </div>
 
   </fieldset>
