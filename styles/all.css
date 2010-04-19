@@ -11,7 +11,11 @@ body {
   padding: 0 2em;
 }
 
-h1, h2, h3, p, ul, ol, blockquote, code.block, dl, figure, pre, table {
+h1, h2, h3, h4, h5, h6 {
+  margin: 1em 0 .25em;
+}
+
+p, ul, ol, blockquote, code.block, dl, figure, pre, table {
   margin-bottom: 1em;
 }
 
