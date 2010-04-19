@@ -2,7 +2,7 @@ This is a quick and dirty set of skeleton JS, CSS, and markup to enable rapidly 
 
 Remaining tasks are...
 
-* Create example of all possible HTML content elements, form elements, and jQuery widgets
-* Datetimes (Form input, Content, etc.)
-* Create Example of all possible/relevant microformats and associated styling
-* Create standard pages (Contact, About, Blog, Blog Post, Bio)
+* Datetimes (Form input, Time, hCalendar, date abbreviations, jQuery date selector, etc.)
+* Create and style frequently used Microformats (hcard, hcalendar, hReview, VoteLinks, rel-license, rel-tag, XFN, adr, hProduct, rel-enclosure)
+* Create and style different <a rel="?"></a> options (Different icons for different relationship links)
+* Create standard pages w/ Default Markup (Contact, About, Blog, Blog Post, Blog Archives, Bio)

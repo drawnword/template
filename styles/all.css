@@ -78,6 +78,14 @@ sup {
   vertical-align: super;
 }
 
+dt {
+  
+}
+
+dd {
+  margin-left: 1em;
+}
+
 table {
   border: 2px solid #ccc;
   width: 100%;
@@ -108,4 +116,3 @@ td {
   margin: 1em 0;
   padding: 1em 0;
 }
-
