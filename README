@@ -2,8 +2,9 @@ This is a quick and dirty set of skeleton JS, CSS, and markup to enable rapidly 
 
 Remaining tasks are...
 
-* Datetimes (Form input, Time, hCalendar, date abbreviations, jQuery date selector, etc.)
+* Datetimes (Form input, hCalendar, date abbreviations, jQuery date selector, etc.)
 * Create and style frequently used Microformats (hcard, hcalendar, hReview, VoteLinks, rel-license, rel-tag, XFN, adr, hProduct, rel-enclosure)
 * Create and style different <a rel="?"></a> options (Different icons for different relationship links)
 * Create standard pages w/ Default Markup (Contact, About, Blog, Blog Post, Blog Archives, Bio)
 * Add in Polypage stuff?
+* iPhone/Mobile Preparedness
