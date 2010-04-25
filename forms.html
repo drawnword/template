@@ -11,21 +11,20 @@
 
 <!--#include file="includes/header.html" -->
 
-<h1>Input Types</h1>
+<h1>Todo</h1>
 <ul>
-<li>tel</li>
-<li>search</li>
-<li>url</li>
-<li>email</li>
-<li>datetime</li>
-<li>date</li>
-<li>month</li>
-<li>week</li>
-<li>time</li>
-<li>datetime-local</li>
-<li>number</li>
-<li>range</li>
-<li>color</li>
+  <li>JavaScript Date Selection</li>
+  <li>Cleanup Textarea Default</li>
+  <li>Default Consistent Cross-browser Styling</li>
+  <li>Small, Medium, Large Fields</li>
+  <li>Address Block</li>
+  <li>Country Input</li>
+  <li>Selects</li>
+  <li>Button, Submit, Image</li>
+  <li>File</li>
+  <li>Errors, Inline, Summary, Listing</li>
+  <li>Flash Messages</li>
+  <li>Submit Button Auto-Disabling</li>
 </ul>
 
 <form>
@@ -33,33 +32,33 @@
     <legend>Legend</legend>
 
     <div class="field">
-      <label for="text-input">Text Input</label>
+      <label for="text-input">Text</label>
       <input type="text" id="text-input" required="required" autofocus="autofocus" />
     </div>
 
     <div class="field">
-      <label for="password-input">Password Input</label>
+      <label for="password-input">Password</label>
       <input type="password" id="password-input" required="required" />
     </div>
 
 
     <div class="field">
-      <label for="email-input">Email Input</label>
+      <label for="email-input">Email</label>
       <input type="email" id="email-input" required="required" />
     </div>
 
     <div class="field">
-      <label for="url-input">URL Input</label>
+      <label for="url-input">URL</label>
       <input type="url" id="url-input" required="required" />
     </div>
 
     <div class="field">
-      <label for="tel-input">Telephone Input</label>
+      <label for="tel-input">Phone</label>
       <input type="tel" id="tel-input" required="required" />
     </div>
 
     <div class="field">
-      <label for="number-input">Number Input <span>(Required)</span></label>
+      <label for="number-input">Number <span>(Required)</span></label>
       <input type="number" id="number-input"
              min="0"
              max="10"
@@ -78,8 +77,8 @@
     </div>
     
     <div class="field">
-      <label for="search-input">Search Input</label>
-      <input type="search" id="search-input" placeholder="Search with Words" />
+      <label for="color-input">Color</label>
+      <input type="color" id="color-input" required="required" />
     </div>
 
     <div class="field">
@@ -87,13 +86,58 @@
       <textarea id="textarea-input"></textarea>
     </div>
     
+  </fieldset>
+
+  <fieldset>
+    <legend>Radio Buttons</legend>
+
     <div class="field">
       <input type="radio" />
       <input type="radio" />
       <input type="radio" />
       <input type="radio" />
     </div>
+  </fieldset>
 
+  <fieldset>
+    <legend>Checkboxes</legend>
+
+    <div class="field">
+      <input type="checkbox" />
+      <input type="checkbox" />
+      <input type="checkbox" />
+      <input type="checkbox" />
+    </div>
+  </fieldset>
+
+
+  <fieldset>
+    <legend>Date &amp; Time Representations</legend>
+
+    <div class="field">
+      <label for="datetime-input">Date Time</label>
+      <input type="datetime" id="datetime-input" />
+    </div>
+
+    <div class="field">
+      <label for="date-input">Date</label>
+      <input type="date" id="date-input" />
+    </div>
+
+    <div class="field">
+      <label for="month-input">Month</label>
+      <input type="month" id="month-input" />
+    </div>
+    
+    <div class="field">
+      <label for="week-input">Week</label>
+      <input type="week" id="week-input" />
+    </div>
+    
+    <div class="field">
+      <label for="time-input">Time</label>
+      <input type="time" id="time-input" />
+    </div>
   </fieldset>
 
 </form>

@@ -24,3 +24,12 @@ form {
 .field > span {
   display: block;
 }
+
+fieldset {
+  border-top: 2px solid #ccc;
+  margin-bottom: 1em;
+}
+
+fieldset legend {
+  padding-right: 5px;
+}
