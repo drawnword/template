@@ -56,7 +56,9 @@ function prepareAutofocus() {
 // Prepare date selection tools
 function prepareDateAndTimes() {
   if (!Modernizr.inputtypes.date) {
-    $('input[type="date"]').datepicker();
+    $('input[type="date"]').datepicker({  showOtherMonths: true, 
+                                          selectOtherMonths: true, 
+                                          showAnim: ''});
   }
   if (!Modernizr.inputtypes.datetime) {
     $('input[type="datetime"]').datepicker();
@@ -73,14 +75,12 @@ function prepareDateAndTimes() {
   if (!Modernizr.inputtypes.datetime-local) {
     $('input[type="datetime-local"]').datepicker();
   }
-  
-  
 }
 
 $(document).ready(function() {
 
   /* 
-    TODO: Date input popup calendar.
+    TODO: Need to customize the date picker for each scenario and add support for fields split over multiple select fields Also, styling.
     TODO: Color input popup.
     TODO: File inputs. This may be fairly hairy.
   */
