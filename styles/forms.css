@@ -4,6 +4,10 @@ This should only contain styles that make forms more usable regardless of the me
 
 */
 
+input, textarea, button {
+  font-size: 100%;
+}
+
 form {
   margin-bottom: 1em;
 }
@@ -32,4 +36,13 @@ fieldset {
 
 fieldset legend {
   padding-right: 5px;
+}
+
+textarea {
+  width: 90%;
+  height: 6em;
+}
+
+.placeholder {
+  color: #999;
 }

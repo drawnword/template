@@ -5,26 +5,25 @@
 <head>
   <title>Forms<!--#include file="includes/title.html" --></title>
   <!--#include file="includes/head.html" -->
+  <script src="scripts/forms.js"></script>
 </head>
 
 <body>
 
 <!--#include file="includes/header.html" -->
 
-<h1>Todo</h1>
+<h1>TODO:</h1>
 <ul>
   <li>JavaScript Date Selection</li>
-  <li>Cleanup Textarea Default</li>
   <li>Default Consistent Cross-browser Styling</li>
   <li>Small, Medium, Large Fields</li>
   <li>Address Block</li>
   <li>Country Input</li>
   <li>Selects</li>
-  <li>Button, Submit, Image</li>
-  <li>File</li>
+  <li>Image Button</li>
+  <li>Focus Styling</li>
   <li>Errors, Inline, Summary, Listing</li>
   <li>Flash Messages</li>
-  <li>Submit Button Auto-Disabling</li>
 </ul>
 
 <form>
@@ -33,7 +32,7 @@
 
     <div class="field">
       <label for="text-input">Text</label>
-      <input type="text" id="text-input" required="required" autofocus="autofocus" />
+      <input type="text" id="text-input" required="required" autofocus="autofocus" placeholder="Placeholder" />
     </div>
 
     <div class="field">
@@ -139,6 +138,24 @@
       <input type="time" id="time-input" />
     </div>
   </fieldset>
+
+  <fieldset>
+    <legend>Files</legend>
+    
+    <div class="field">
+      <label for="file-input">File</label>
+      <input type="file" id="file-input" />
+    </div>
+
+  </fieldset>    
+
+  <div class="buttons">
+    <input type="submit" value="Submit" />
+    <input type="button" value="Submit"/>
+    <input type="image" value="Submit"/>
+    <button type="submit">Submit</button>
+    <button type="button">Button</button>
+  </div>
 
 </form>
 
