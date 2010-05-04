@@ -3,8 +3,8 @@ function protectSubmitButtons() {
   // On form submission
   $("form").submit( function() { 
     
-    // Disable any and all submit buttons
-    $('input:submit').attr( { disabled : 'disabled' } ); 
+    // Disable any and all submit buttons, both input, and button elements
+    $(':submit').attr( { disabled : 'disabled' } ); 
   } );
 }
 
@@ -53,14 +53,41 @@ function prepareAutofocus() {
   } 
 }
 
+// Prepare date selection tools
+function prepareDateAndTimes() {
+  if (!Modernizr.inputtypes.date) {
+    $('input[type="date"]').datepicker();
+  }
+  if (!Modernizr.inputtypes.datetime) {
+    $('input[type="datetime"]').datepicker();
+  }
+  if (!Modernizr.inputtypes.month) {
+    $('input[type="month"]').datepicker();
+  }
+  if (!Modernizr.inputtypes.week) {
+    $('input[type="week"]').datepicker();
+  }
+  if (!Modernizr.inputtypes.time) {
+    $('input[type="time"]').datepicker();
+  }
+  if (!Modernizr.inputtypes.datetime-local) {
+    $('input[type="datetime-local"]').datepicker();
+  }
+  
+  
+}
+
 $(document).ready(function() {
 
   /* 
     TODO: Date input popup calendar.
+    TODO: Color input popup.
     TODO: File inputs. This may be fairly hairy.
   */
+  
   protectSubmitButtons();  
   preparePlaceholders();
   prepareAutofocus();
+  prepareDateAndTimes();
 
 });
