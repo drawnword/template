@@ -62,3 +62,30 @@ textarea {
 .placeholder {
   color: #999;
 }
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="url"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+  border-top: 1px solid #666;
+  border-right: 1px solid #bbb;
+  border-bottom: 1px solid #bbb;
+  border-left: 1px solid #666;
+  padding: 5px 2px 1px 2px;
+  line-height: 140%;
+}
+
+input[type="search"] {
+  border-top: 1px solid #666;
+  border-right: 1px solid #bbb;
+  border-bottom: 1px solid #bbb;
+  border-left: 1px solid #666;
+  padding: 5px 10px 1px 10px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+}
