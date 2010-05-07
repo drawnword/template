@@ -16,6 +16,11 @@ form {
   margin-bottom: .5em;
 }
 
+  .x-large.field input { width: 30em; }
+  .large.field input { width: 20em; }
+  .small.field input { width: 8em; }
+  .x-small.field input { width: 3em; }
+
 .field li {
   line-height: 180%;
   list-style-type: none;
@@ -67,7 +72,7 @@ input:focus,
 select:focus,
 textarea:focus {
   background: #e9f4ff;
-  border: 1px solid #38638e;
+  border: 1px solid #38638e!important;
 }
 
 input[type="date"],
@@ -97,6 +102,7 @@ textarea {
 }
 
 input[type="search"] {
+  border-color: #999;
   padding: 5px 10px 1px 10px;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
