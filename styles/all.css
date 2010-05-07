@@ -120,3 +120,33 @@ td {
   margin: 1em 0;
   padding: 1em 0;
 }
+
+/***** `post *****/
+
+article.post {
+  
+}
+
+article.post header {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 1em;
+}
+
+article.post header p.summary {
+  margin: 0;
+}
+
+article.post header p.byline {
+  color: #666;
+  font-size: 80%;
+  margin: 0;
+}
+
+article.post header time {
+  color: #666;
+  font-size: 80%;
+}
+
+article.post footer {
+  
+}

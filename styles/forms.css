@@ -16,8 +16,24 @@ form {
   margin-bottom: .5em;
 }
 
+.field li {
+  line-height: 180%;
+  list-style-type: none;
+}
+
+.field input[type="radio"],
+.field input[type="checkbox"] {
+  margin-top: -2px;
+}
+
 .field label {
   display: block;
+}
+
+.field > input[type="checkbox"] + label,
+.field li label {
+  display: -moz-inline-stack;
+  display: inline-block;
 }
 
 .field span {
