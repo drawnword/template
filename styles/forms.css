@@ -15,9 +15,10 @@ form {
 .field {
   margin-bottom: .5em;
 }
-
+  
   .x-large.field input { width: 30em; }
   .large.field input { width: 20em; }
+  /* Medium is excluded because it is the default size. */
   .small.field input { width: 8em; }
   .x-small.field input { width: 3em; }
 

@@ -14,7 +14,7 @@
 <h1>Todo</h1>
 <ul>
   <li>Inline note/reminder format</li>
-  <li>Tags</li>
+  <li>Tags (microformats)</li>
   <li>Comments</li>
   <li>Comment Form</li>
   <li>Figure w/ &amp; w/o Caption</li>
@@ -62,7 +62,31 @@
       <!-- Comment goes here -->
     </article>
     <form> 
-      <!-- Comment form goes here... -->
+
+      <div class="large field">
+        <label for="text-input">Name</label>
+        <input type="text" id="text-input" required="required" autofocus="autofocus" placeholder="Placeholder" />
+      </div>
+
+      <div class="large field">
+        <label for="email-input">Email</label>
+        <input type="email" id="email-input" required="required" />
+      </div>
+      
+      <div class="large field">
+        <label for="url-input">URL</label>
+        <input type="url" id="url-input" required="required" />
+      </div>
+      
+      <div class="large field">
+        <label for="textarea-input">Comments</label>
+        <textarea id="textarea-input"></textarea>
+      </div>
+      
+      <div class="buttons">
+        <input type="submit" value="Submit" />
+      </div>
+      
     </form>
   </section>
 
