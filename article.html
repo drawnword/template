@@ -5,6 +5,7 @@
   <title>TODO<!--#include file="includes/title.html" --></title>
   <!--#include file="includes/head.html" -->
   <!--#include file="includes/ie.html" -->
+  <script src="scripts/forms.js"></script>
 </head>
 
 <body>
@@ -16,9 +17,7 @@
   <li>Inline note/reminder format</li>
   <li>Tags (microformats)</li>
   <li>Comments</li>
-  <li>Comment Form</li>
   <li>Figure w/ &amp; w/o Caption</li>
-  <li>Update Section</li>
   <li>Byline Meta Data</li>
   <li>Related Articles (Aside)</li>
   <li>Different classes of articles? Link, post, quote, product, movie, book, etc.</li>
@@ -46,7 +45,8 @@
   <p>Something with a footnote. <sup><a href="#fn1" id="r1">[1]</a></sup></p>
 
   <section class="update">
-    This section would be used for adding an update to a post.
+    <strong>Update</strong>
+    <p>This section would be used for adding an update to a post.</p>
   </section>
   
   <section class="footnotes">
@@ -65,7 +65,7 @@
 
       <div class="large field">
         <label for="text-input">Name</label>
-        <input type="text" id="text-input" required="required" autofocus="autofocus" placeholder="Placeholder" />
+        <input type="text" id="text-input" required="required" />
       </div>
 
       <div class="large field">
