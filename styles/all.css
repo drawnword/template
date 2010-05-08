@@ -1,3 +1,8 @@
+/* Todo */
+ul.todo li {
+  background-color: #ffc;
+}
+
 header, footer, nav, section, article { 
  display:block; 
 }
@@ -44,6 +49,10 @@ figure, video, img {
 blockquote {
   background: #f0f0f0;
   padding: 10px;
+}
+
+dt {
+  font-weight: bold;
 }
 
 q:before {
@@ -136,7 +145,7 @@ article.post header time {
   color: #666;
 }
 
-araticle.post header h1 {
+article.post header h1 {
 }
 
 article.post header p {
