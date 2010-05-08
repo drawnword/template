@@ -132,21 +132,28 @@ article.post header {
   margin-bottom: 1em;
 }
 
-article.post header p.summary {
-  margin: 0;
-}
-
-article.post header p.byline {
-  color: #666;
-  font-size: 80%;
+article.post .summary {
   margin: 0;
 }
 
 article.post header time {
-  color: #666;
-  font-size: 80%;
 }
 
-article.post footer {
-  
+article.post .author {
+}
+
+section.comments {
+  border-top: 1px solid #ccc;
+  margin-top: 1em;
+}
+
+section.comments article {
+  border-top: 1px solid #ccc;
+  padding-top: 1em;
+}
+
+section.comments form {
+  border: 1px solid #ccc;
+  background-color: #f0f0f0;
+  padding: 10px;
 }
