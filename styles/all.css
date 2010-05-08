@@ -124,23 +124,50 @@ td {
 /***** `post *****/
 
 article.post {
-  
 }
 
 article.post header {
   border-bottom: 1px solid #ccc;
   margin-bottom: 1em;
-}
-
-article.post .summary {
-  margin: 0;
+  padding-bottom: 1em;
 }
 
 article.post header time {
+  color: #666;
 }
+
+araticle.post header h1 {
+}
+
+article.post header p {
+  margin: 0;
+}
+
 
 article.post .author {
 }
+
+/***** `update *****/
+
+section.update {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 1em 0 0;
+}
+
+/***** `footnotes *****/
+
+section.footnotes {
+}
+
+section.footnotes ul {
+}
+
+section.footnotes ul li {
+}
+
+/***** `comments *****/
 
 section.comments {
   border-top: 1px solid #ccc;

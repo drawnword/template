@@ -35,14 +35,3 @@ ex. layout, float, background images, etc.
   background-color: #eeffeb;
   border-color: #3abe24;
 }
-
-article header {
-  padding-bottom: 1em;
-}
-
-section.update {
-  border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 1em 0 0;
-}
