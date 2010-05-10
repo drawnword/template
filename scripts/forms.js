@@ -53,17 +53,6 @@ function prepareAutofocus() {
   } 
 }
 
-// Prepare date selection tools
-function prepareDateAndTimes() {
-  if (!Modernizr.inputtypes.date) {
-    $('input[type="date"]').datepicker({  showOtherMonths: true, 
-                                          selectOtherMonths: true, 
-                                          showAnim: ''});
-  }
-}
-
-
-
 $(document).ready(function() {
 
   /* 
@@ -75,6 +64,5 @@ $(document).ready(function() {
   protectSubmitButtons();  
   preparePlaceholders();
   prepareAutofocus();
-  prepareDateAndTimes();
 
 });
