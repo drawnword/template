@@ -44,13 +44,18 @@ function selectTimeZone() {
     }
     dst = "1"; // Daylight savings time is observed
   }
-  var i;
-  for (i = 0; i < document.getElementById('time_zone').options.length; i++) {
-    if (document.getElementById('time_zone').options[i].text.indexOf(convert(std_time_offset))>=0) {
-      document.getElementById('time_zone').selectedIndex = i;
-      break;
+  
+  $('select.timezone').each( function(intIndex) {
+    timeZoneSelect = this;
+      var i;
+      for (i = 0; i < timeZoneSelect.options.length; i++) {
+        if (timeZoneSelect.options[i].text.indexOf(convert(std_time_offset))>=0) {
+          timeZoneSelect.selectedIndex = i;
+          break;
+        }
+      }
     }
-  }
+  );
 }
 
 // Convert the time zone offset into a select-friendly string (ex. -06:00) for setting the selected value
