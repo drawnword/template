@@ -11,8 +11,8 @@
 
 <!--#include file="includes/header.html" -->
 
-<h1>Todo</h1>
-<ul>
+<h1>TODO:</h1>
+<ul class="todo">
   <li>hCalendar</li>
   <li>hCard</li>
   <li>hReview</li>
@@ -24,6 +24,73 @@
   <li>adr</li>
   <li>Create and style different <a rel="?"></a> options (Different icons for different relationship links)</li>
 </ul>
+
+<h1>hCalendar</h1>
+<ul>
+  <li><a href="http://microformats.org/profile/hcalendar">hCalendar 1.0.1 XMDP profile</a></li>
+  <li><a href="http://microformats.org/wiki/hcalendar">Microformats Wiki on hCalendar</a></li>
+  <li><a href="http://microformats.org/code/hcalendar/creator">hCalendar Creator</a></li>
+</ul>
+
+<h2>Multi-day Event</h2>
+
+<div class="vevent">
+ <a class="url" href="http://conferences.oreillynet.com/pub/w/40/program.html">
+  http://conferences.oreillynet.com/pub/w/40/program.html
+ </a>
+ <span class="summary">Web 2.0 Conference</span>: 
+ <abbr class="dtstart" title="2005-10-05">October 5</abbr>-
+ <abbr class="dtend" title="2005-10-07">7</abbr>,
+ at the <span class="location">Argent Hotel, San Francisco, CA</span>
+</div>
+
+<h2>Meeting</h2>
+
+<div class="vevent">
+<h3 class="summary">XYZ Project Review</h3>
+<p class="description">Project XYZ Review Meeting</p>
+<p>To be held on <abbr class="dtstart" title="1998-03-12T08:30:00-05:00">12 March 1998 from 8:30am EST</abbr> 
+until <abbr class="dtend" title="1998-03-12T09:30:00-05:00">9:30am EST</abbr></p>
+<p>Location: <span class="location">1CP Conference Room 4350</span></p>
+<small>Booked by: <span class="uid">guid-1.host1.com</span> on 
+<abbr class="dtstamp" title="19980309T231000Z">9 Mar 1998 6:00pm</abbr></small>
+</div>
+
+<h1>hCard</h1>
+<ul>
+  <li><a href="http://microformats.org/profile/hcard">hCard 1.0.1 XMDP profile</a></li>
+  <li><a href="http://microformats.org/wiki/hcard">Microformats Wiki on hCard</a></li>
+  <li><a href="http://microformats.org/code/hcard/creator">hCard Creator</a></li>
+</ul>
+
+<div class="vcard">
+  <a class="fn org url" href="http://www.commerce.net/">CommerceNet</a>
+  <div class="adr">
+    <span class="type">Work</span>:
+    <div class="street-address">169 University Avenue</div>
+    <span class="locality">Palo Alto</span>,  
+    <abbr class="region" title="California">CA</abbr>&nbsp;&nbsp;
+    <span class="postal-code">94301</span>
+    <div class="country-name">USA</div>
+  </div>
+  <div class="tel">
+   <span class="type">Work</span> +1-650-289-4040
+  </div>
+  <div class="tel">
+    <span class="type">Fax</span> +1-650-289-4041
+  </div>
+  <div>Email: 
+   <span class="email">info@commerce.net</span>
+  </div>
+</div>
+
+<h1>hReview</h1>
+<ul>
+  <li><a href="http://microformats.org/wiki/hreview-profile">hReview XMDP</a></li>
+  <li><a href="http://microformats.org/wiki/hreview">Microformats Wiki on hReview</a></li>
+  <li><a href="http://microformats.org/code/hreview/creator">hReview Creator</a></li>
+</ul>
+
 
 <!--#include file="includes/footer.html" -->
 
