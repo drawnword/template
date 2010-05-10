@@ -68,9 +68,16 @@ function convert(value) {
   value *= 60;
   var secs = parseInt(value);
   var display_hours = hours;
-  display_hours = (hours < 10 && hours > 0) ? "+0"+hours : "+"+hours; // positive
+
+  // Contstruct the string for positive hours.
+  display_hours = (hours < 10 && hours > 0) ? "+0"+hours : "+"+hours;
+
+  // Construct the string for GMT
   display_hours = (hours == 0) ? "0"+hours : display_hours; // handle GMT case (00:00)
-  display_hours = (hours < 0 && hours > -10) ? "-0"+Math.abs(hours) : display_hours; // neg
+
+  // Contstruct the string for negative hours.
+  display_hours = (hours < 0 && hours > -10) ? "-0"+Math.abs(hours) : display_hours; 
+
   mins = (mins < 10) ? "0"+mins : mins;
   return display_hours+":"+mins;
 }
