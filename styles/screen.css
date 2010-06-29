@@ -1,10 +1,15 @@
 /* 
 
-This should only contain styles that we explicitly want to hide from print. 
+This should only contain styles that we implicitly want to hide from print. 
 
 ex. layout, float, background images, etc.
 
 */
+
+img {
+  max-width: 100%;
+  -ms-interpolation-mode: bicubic;
+}
 
 .blurb {
   border-style: solid;
@@ -37,8 +42,9 @@ ex. layout, float, background images, etc.
 }
 
 aside {
-  background-color: #ccc;
+  border-left: 1px solid #ccc;
   float: right;
+  padding-left: 1em;
   width: 25%;
 }
 
