@@ -25,6 +25,8 @@ form {
 .field li {
   line-height: 180%;
   list-style-type: none;
+  margin-left: -1.5em;
+  
 }
 
 .field input[type="radio"],
