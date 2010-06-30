@@ -41,6 +41,19 @@ img {
   border-color: #3abe24;
 }
 
+
+section.content > section,
+section.content > article {
+  float: left;
+  width: 60%;
+}
+
+section.content > aside {
+  float: right;
+  width: 30%;
+}
+
+
 aside {
   border-left: 1px solid #ccc;
   float: right;

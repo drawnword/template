@@ -24,6 +24,11 @@ h1, h2, h3, h4, h5, h6 {
   margin: 1em 0 .25em;
 }
 
+section > h1,
+article > h1 {
+  margin-top: 0;
+}
+
 h1 {
   font-size: 140%;
 }
@@ -134,10 +139,12 @@ td {
 
 #header nav li a {
   padding: 0 20px 0 0 ;
+  text-decoration: none;
 }
 
 #footer {
   border-top: 1px solid #ccc;
+  clear: both;
   margin: 1em 0;
   padding: 1em 0;
 }
@@ -204,4 +211,12 @@ section.comments form {
   border: 1px solid #ccc;
   background-color: #f0f0f0;
   padding: 10px;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
 }
