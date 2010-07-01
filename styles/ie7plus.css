@@ -1,5 +1,0 @@
-/* Triggering hasLayout for IE7/win */
-
-*:first-child+html .group {
-  min-height: 1px;
-}
