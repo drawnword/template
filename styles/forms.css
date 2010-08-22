@@ -29,9 +29,13 @@ form {
   
 }
 
-.field input[type="radio"],
-.field input[type="checkbox"] {
-  margin-top: -2px;
+input[type="radio"] { 
+  vertical-align: text-bottom;
+}
+
+input[type="checkbox"] { 
+  vertical-align: bottom; 
+  *vertical-align: baseline; 
 }
 
 .field label {
@@ -110,4 +114,19 @@ input[type="search"] {
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   border-radius: 15px;
+}
+
+label, 
+input[type=button],
+input[type=submit],
+button { 
+  cursor: pointer;
+}
+
+input[type=button],
+input[type=submit],
+button { 
+  /* http://www.viget.com/inspire/styling-the-button-element-in-internet-explorer/ */
+  width: auto;
+  overflow: visible;
 }

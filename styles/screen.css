@@ -7,7 +7,6 @@ ex. layout, float, background images, etc.
 */
 
 img {
-  max-width: 100%;
   -ms-interpolation-mode: bicubic;
 }
 

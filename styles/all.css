@@ -7,6 +7,11 @@ header, footer, nav, section, article {
  display:block; 
 }
 
+html {
+  /* http://maxvoltar.com/archive/-webkit-font-smoothing */
+  -webkit-font-smoothing: antialiased;
+}
+
 html * { 
   font-family: helvetica, arial, sans-serif;
   line-height: 140%;
@@ -22,6 +27,8 @@ p, ul, ol, blockquote, code.block, dl, figure, pre, table {
 
 h1, h2, h3, h4, h5, h6 {
   margin: 1em 0 .25em;
+  /* http://www.aestheticallyloyal.com/public/optimize-legibility/ */
+  text-rendering: optimizeLegibility;
 }
 
 section > h1,

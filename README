@@ -1,6 +1,18 @@
 This is a quick and dirty set of skeleton JS, CSS, and markup to enable rapidly building out markup for sites.
 
+It's worth mentioning that this is a very focused effort based on my recurring needs. It won't be everything to everyone, and IE6 isn't even a blip on the radar. We all like to do things a certain way, and so, while inspired by many others, this is simply a template built from the ground up so that I'm intimately familiar with what it does and doesn't do.
+
+IMPORTANT: Using this relies running .html pages through Apache in order to handle server side includes which I lean on heavily. This makes it easier to develop reusable parts when developing markup templates for a site. Normally, the extension on the html files would be ".shtml", but I simply prefer ".html" and setup my local Apache configuration accordingly.
+
 Remaining tasks are...
 
-* Microformats
-* iPhone/Mobile Preparedness
+* Additional Common HTML Patterns (Blog Post Summary, Sidebar Article List, etc.)
+* Add Generic Responsive Framework Pieces (http://www.alistapart.com/articles/responsive-web-design/)
+* iPhone/Mobile Preparedness (Mobile Safari specific elements)
+
+For other similar, but probably more widely useful and thorough, options, check out...
+
+* "HTML5 Boilerplate":http://html5boilerplate.com/
+* "HTML5 Reset":http://html5doctor.com/html-5-reset-stylesheet/
+* "HTML5 Reset":http://html5reset.org/
+* "HTML5 Starter":http://github.com/rizkysyazuli/html5-starter
