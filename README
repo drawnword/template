@@ -21,6 +21,7 @@ MARKUP
 CSS
 
 * Includes some very basic form styling so the elements look tolerable across browsers
+* Very basic print styling
 
 JAVASCRIPT
 
@@ -32,6 +33,10 @@ TYPOGRAPHY
 
 * It uses Typekit.
 
+BROWSERS
+
+* Some basic stuff for elegantly handling older browsers
+
 Remaining tasks are...
 
 * Additional Common HTML Patterns (Blog Post Summary, Sidebar Article List, etc.)
@@ -39,6 +44,7 @@ Remaining tasks are...
 * iPhone/Mobile Preparedness (Mobile Safari specific elements)
 * Update to Modernizr 1.5
 * Cleanup Typekit integration
+* Add browser handling details
 
 For other similar, but probably more widely useful and thorough, options, check out...
 
