@@ -1,14 +1,44 @@
-This is a quick and dirty set of skeleton JS, CSS, and markup to enable rapidly building out markup for sites.
+This is a quick and dirty set of skeleton JS, CSS, and markup to facilitate rapidly building out page templates for new sites without reinventing the wheel every time.
 
 It's worth mentioning that this is a very focused effort based on my recurring needs. It won't be everything to everyone, and IE6 isn't even a blip on the radar. We all like to do things a certain way, and so, while inspired by many others, this is simply a template built from the ground up so that I'm intimately familiar with what it does and doesn't do.
 
 IMPORTANT: Using this relies running .html pages through Apache in order to handle server side includes which I lean on heavily. This makes it easier to develop reusable parts when developing markup templates for a site. Normally, the extension on the html files would be ".shtml", but I simply prefer ".html" and setup my local Apache configuration accordingly.
+
+What it does (or will do soon)...
+
+STRUCTURE
+
+* Framework for creating a responsive design (http://www.alistapart.com/articles/responsive-web-design/)
+* Include Modernizr, jQuery, and an HTML5 reset
+* Start with a standard set of clickable pages (Home, About, Blog, Contact, etc.)
+
+MARKUP
+
+* Set of common Microformats for easy cut and paste
+* Set of common generic HTML5 markup patterns for things like blogs and comments
+* Include a library of HTML5 elements for easy copy and paste
+
+CSS
+
+* Includes some very basic form styling so the elements look tolerable across browsers
+
+JAVASCRIPT
+
+* Fallbacks for things like placeholder text and autofocus
+* Automatically disables forum buttons on submit
+* Basic script to pre-select time zone in a drop down
+
+TYPOGRAPHY
+
+* It uses Typekit.
 
 Remaining tasks are...
 
 * Additional Common HTML Patterns (Blog Post Summary, Sidebar Article List, etc.)
 * Add Generic Responsive Framework Pieces (http://www.alistapart.com/articles/responsive-web-design/)
 * iPhone/Mobile Preparedness (Mobile Safari specific elements)
+* Update to Modernizr 1.5
+* Cleanup Typekit integration
 
 For other similar, but probably more widely useful and thorough, options, check out...
 
