@@ -11,20 +11,20 @@ and (min-width : 321px) {
 /* Styles */
 }
 
-/* Smartphones (portrait) ----------- */
+/*----------- Smartphones (portrait) -----------*/
 @media only screen 
 and (max-width : 320px) {
 /* Styles */
 }
 
-/* iPads (portrait and landscape) ----------- */
+/*----------- iPads (portrait and landscape) -----------*/
 @media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) {
 /* Styles */
 }
 
-/* iPads (landscape) ----------- */
+/*----------- iPads (landscape) -----------*/
 @media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
@@ -32,7 +32,7 @@ and (orientation : landscape) {
 /* Styles */
 }
 
-/* iPads (portrait) ----------- */
+/*----------- iPads (portrait) -----------*/
 @media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
@@ -40,25 +40,54 @@ and (orientation : portrait) {
 /* Styles */
 }
 
-/* Desktops and laptops ----------- */
+/*----------- Desktops and laptops -----------*/
 @media only screen 
 and (min-width : 1224px) {
 /* Styles */
 }
 
-/* Large screens ----------- */
+/*----------- Large screens -----------*/
 @media only screen 
 and (min-width : 1824px) {
 /* Styles */
 }
 
-/* iPhone 4 ----------- */
+/*----------- iPhone 4 -----------*/
 @media
 only screen and (-webkit-min-device-pixel-ratio : 1.5),
 only screen and (min-device-pixel-ratio : 1.5) {
 /* Styles */
 }
 
+/*----------- Print Only ----------- */
+@media print {
+  /*  This should only contain styles that help drive cleaner print. ex. display-none, href :after content, etc.
+      More info and advice available at http://www.alistapart.com/articles/goingtoprint/ */
+
+  body {
+    font-size: 12pt;
+  }
+
+  nav, .blurb {
+    display: none;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ") ";
+  }
+
+  a[href^="/"]:after {
+    content: " (http://www.TODO.com" attr(href) ") ";
+  }
+
+  ul li {
+    list-style-type: circle;
+  }
+
+  .no-print {
+    display: none;
+  }
+}
 
 
 /******************************
@@ -73,6 +102,10 @@ ul.todo li {
 /******************************
 `Base
 ******************************/
+
+img {
+  -ms-interpolation-mode: bicubic;
+}
 
 header, footer, nav, section, article { 
  display:block; 
@@ -438,3 +471,87 @@ button {
   width: auto;
   overflow: visible;
 }
+
+
+/******************************
+`Layout & Design
+******************************/
+
+
+.blurb {
+  border-style: solid;
+  border-width: 2px;
+  margin: 0 0 10px 0;
+  padding: 10px;
+}
+
+.blurb strong {
+  
+}
+
+.blurb p {
+  margin: 0;
+}
+
+.error.blurb {
+  background-color: #ffebeb;
+  border-color: #e65757;
+}
+
+.warning.blurb {
+  background-color: #ffffe5;
+  border-color: #d3b586;
+}
+
+.notice.blurb {
+  background-color: #eeffeb;
+  border-color: #3abe24;
+}
+
+
+section.content > section,
+section.content > article {
+  float: left;
+  width: 60%;
+}
+
+section.content > aside {
+  float: right;
+  width: 30%;
+}
+
+
+aside {
+  border-left: 1px solid #ccc;
+  float: right;
+  padding-left: 1em;
+  width: 25%;
+}
+
+aside nav {
+  
+}
+
+aside nav ul {
+  list-style-type: none;
+  margin: 0 0 1em;
+}
+
+aside nav li {
+  list-style-type: none;
+}
+
+aside nav li a {
+  background-color: #f0f0f0;
+  border-bottom: 1px solid #fff;
+  display: block;
+  padding: .25em .5em;
+  text-decoration: none;
+}
+
+aside nav li a:hover {
+  background-color: #ffc;
+}
+
+p.slab { font-family: "museo-sans-1", "museo-sans-2", helvetica, arial, serif; }
+p.sans { font-family: "museo-slab-1", "museo-slab-2", helvetica, arial, serif; }
