@@ -9,14 +9,14 @@ What it does (or will do soon)...
 STRUCTURE
 
 * Framework for creating a responsive design (http://www.alistapart.com/articles/responsive-web-design/)
-* Include Modernizr, jQuery, and an HTML5 reset
+* Include Modernizr, jQuery, Formalize, and an HTML5 reset
 * Start with a standard set of clickable pages (Home, About, Blog, Contact, etc.)
 
 MARKUP
 
-* Set of common Microformats for easy cut and paste
+* Set of common Microformats for convenient copy and paste
 * Set of common generic HTML5 markup patterns for things like blogs and comments
-* Include a library of HTML5 elements for easy copy and paste
+* Include a library of HTML5 elements for convenient copy and paste and style testing
 
 CSS
 

@@ -8,6 +8,17 @@ function protectSubmitButtons() {
   } );
 }
 
+function detectCardType() {
+  // Look for a card type drop down
+  
+  // Make it invisible
+  
+  // Insert black and white Card Brand images
+  
+  // Add event handler to credit card field
+}
+
+
 $(document).ready(function() {
 
   /* 
@@ -16,6 +27,7 @@ $(document).ready(function() {
     TODO: File inputs. This may be fairly hairy.
   */
   
+  detectCardType();
   protectSubmitButtons();  
 
 });
