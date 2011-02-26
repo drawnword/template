@@ -410,13 +410,8 @@ section.comments form {
 }
 
 /******************************
-`Forms
+`Form layout
 ******************************/
-
-button, input, select, textarea {
-  font-size: 100%;
-  margin: 0;
-}
 
 form {
   margin-bottom: 1em;
@@ -425,27 +420,12 @@ form {
 .field {
   margin-bottom: .5em;
 }
-  
-  .x-large.field input { width: 30em; }
-  .large.field input { width: 20em; }
-  /* Medium is excluded because it is the default size. */
-  .small.field input { width: 8em; }
-  .x-small.field input { width: 3em; }
 
 .field li {
   line-height: 180%;
   list-style-type: none;
   margin-left: -1.5em;
   
-}
-
-input[type="radio"] { 
-  vertical-align: text-bottom;
-}
-
-input[type="checkbox"] { 
-  vertical-align: bottom; 
-  *vertical-align: baseline; 
 }
 
 .field label {
@@ -476,77 +456,9 @@ fieldset legend {
   padding-right: 5px;
 }
 
-textarea {
-  width: 90%;
-  height: 6em;
-  /* www.sitepoint.com/blogs/2010/08/20/ie-remove-textarea-scrollbars/ */
-  overflow: auto;
-}
-
-.placeholder {
-  color: #999;
-}
-
-input:focus,
-select:focus,
-textarea:focus {
-  background: #e9f4ff;
-  border: 1px solid #38638e!important;
-}
-
-input[type="date"],
-input[type="email"],
-input[type="password"],
-input[type="search"],
-input[type="tel"],
-input[type="text"],
-input[type="url"],
-select,
-textarea {
-  border-top: 1px solid #666;
-  border-right: 1px solid #bbb;
-  border-bottom: 1px solid #bbb;
-  border-left: 1px solid #666;
-  line-height: 140%;
-}
-
-input[type="date"],
-input[type="email"],
-input[type="password"],
-input[type="tel"],
-input[type="text"],
-input[type="url"],
-textarea {
-  padding: 5px 2px 1px 2px;
-}
-
-input[type="search"] {
-  border-color: #999;
-  padding: 5px 10px 1px 10px;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  border-radius: 15px;
-}
-
-label, 
-input[type=button],
-input[type=submit],
-button { 
-  cursor: pointer;
-}
-
-input[type=button],
-input[type=submit],
-button { 
-  /* http://www.viget.com/inspire/styling-the-button-element-in-internet-explorer/ */
-  width: auto;
-  overflow: visible;
-}
-
 /******************************
 `Layout & Design
 ******************************/
-
 
 .blurb {
   border-style: solid;
