@@ -17,7 +17,5 @@ $(document).ready(function() {
   */
   
   protectSubmitButtons();  
-  // preparePlaceholders();
-  // prepareAutofocus();
 
 });
