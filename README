@@ -1,6 +1,6 @@
-This is a quick and dirty set of skeleton JS, CSS, and markup to facilitate rapidly building out page templates for new sites without reinventing the wheel every time.
+This is a quick and dirty set of skeleton JS, CSS, and markup to facilitate rapidly building out page templates for new sites without reinventing the wheel every time. 
 
-It's worth mentioning that this is a very focused effort based on my recurring needs. It won't be everything to everyone, and IE6 isn't even a blip on the radar. We all like to do things a certain way, and so, while inspired by many others, this is simply a template built from the ground up so that I'm intimately familiar with what it does and doesn't do.
+It's worth mentioning that this is a very focused effort based on my recurring needs. The goal isn't to provide a base template for everyone, but rather to make it available in case it can help others looking to do something similar. It won't be everything to everyone, and IE6 isn't even a blip on the radar. We all like to do things a certain way, and so, while inspired by many others, this is simply a template built from the ground up so that I'm intimately familiar with what it does and doesn't do.
 
 IMPORTANT: Using this relies running .html pages through Apache in order to handle server side includes which I lean on heavily. This makes it easier to develop reusable parts when developing markup templates for a site. Normally, the extension on the html files would be ".shtml", but I simply prefer ".html" and setup my local Apache configuration accordingly.
 
@@ -25,28 +25,17 @@ CSS
 
 JAVASCRIPT
 
+* jQuery 1.5.1
+* modernizr 1.7
 * Fallbacks for things like placeholder text and autofocus
-* Automatically disables forum buttons on submit
+* Automatically disables form buttons on submit
 * Basic script to pre-select time zone in a drop down
-
-TYPOGRAPHY
-
-* It uses Typekit.
 
 BROWSERS
 
 * Some basic stuff for elegantly handling older browsers
 
-Remaining tasks are...
-
-* Additional Common HTML Patterns (Blog Post Summary, Sidebar Article List, etc.)
-* Add Generic Responsive Framework Pieces (http://www.alistapart.com/articles/responsive-web-design/)
-* iPhone/Mobile Preparedness (Mobile Safari specific elements)
-* Update to Modernizr 1.5
-* Cleanup Typekit integration
-* Add browser handling details
-
-For other similar, but probably more widely useful and thorough, options, check out...
+Much of this was able to benefit significantly from other similar projects. Check out...
 
 * HTML5 Boilerplate - http://html5boilerplate.com/
 * HTML5 Reset - http://html5doctor.com/html-5-reset-stylesheet/

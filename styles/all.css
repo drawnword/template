@@ -64,6 +64,12 @@ only screen and (min-device-pixel-ratio : 1.5) {
   /*  This should only contain styles that help drive cleaner print. ex. display-none, href :after content, etc.
       More info and advice available at http://www.alistapart.com/articles/goingtoprint/ */
 
+  * { 
+    background: transparent !important;
+    color: #444 !important;
+    text-shadow: none !important;
+  }
+
   body {
     font-size: 12pt;
   }
@@ -80,8 +86,38 @@ only screen and (min-device-pixel-ratio : 1.5) {
     content: " (http://www.TODO.com" attr(href) ") ";
   }
 
+  abbr[title]:after { 
+    content: " (" attr(title) ")"; 
+  }
+
   ul li {
     list-style-type: circle;
+  }
+
+  pre, blockquote { 
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  
+  thead { 
+    /* css-discuss.incutio.com/wiki/Printing_Tables */
+    display: table-header-group; 
+  } 
+
+  tr, img { 
+    page-break-inside: avoid; 
+  }
+
+  @page { 
+    margin: 0.5cm; 
+  }
+  
+  p, h2, h3 { 
+    orphans: 3; widows: 3; 
+  }
+  
+  h2, h3{ 
+    page-break-after: avoid; 
   }
 
   .no-print {
@@ -103,17 +139,11 @@ ul.todo li {
 `Base
 ******************************/
 
-img {
-  -ms-interpolation-mode: bicubic;
-}
-
-header, footer, nav, section, article { 
- display:block; 
-}
-
 html {
   /* http://maxvoltar.com/archive/-webkit-font-smoothing */
   -webkit-font-smoothing: antialiased;
+  /* Force a scrollbar in non-IE browsers to avoid the shift of content */
+  overflow-y: scroll;
 }
 
 html * { 
@@ -125,11 +155,45 @@ body {
   padding: 0 2em;
 }
 
+a:hover, a:active { 
+  outline: none; 
+}
+
+a:link { 
+  /* j.mp/webkit-tap-highlight-color */
+  -webkit-tap-highlight-color: #ccc; 
+}
+
+pre, code, kbd, samp { 
+  font-family: monospace, sans-serif; 
+}
+
+/* http://www.pathf.com/blogs/2008/05/formatting-quoted-code-in-blog-posts-css21-white-space-pre-wrap/ */
+pre {
+  white-space: pre; /* CSS2 */
+  white-space: -moz-pre-wrap; /* Mozilla */
+  white-space: -hp-pre-wrap; /* HP printers */
+  white-space: -o-pre-wrap; /* Opera 7 */
+  white-space: -pre-wrap; /* Opera 4-6 */
+  white-space: pre-wrap; /* CSS 2.1 */
+  white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
+  word-wrap: break-word; /* IE */
+}
+
+img {
+  -ms-interpolation-mode: bicubic;
+}
+
+header, footer, nav, section, article { 
+ display:block; 
+}
+
 p, ul, ol, blockquote, code.block, dl, figure, pre, table {
   margin-bottom: 1em;
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
   margin: 1em 0 .25em;
   /* http://www.aestheticallyloyal.com/public/optimize-legibility/ */
   text-rendering: optimizeLegibility;
@@ -237,6 +301,10 @@ td {
 ul, ol {
   display: block;
   margin-left: 1.5em;
+}
+
+ol { 
+  list-style-type: decimal; 
 }
 
 #header {
@@ -347,6 +415,7 @@ section.comments form {
 
 button, input, select, textarea {
   font-size: 100%;
+  margin: 0;
 }
 
 form {
@@ -410,6 +479,8 @@ fieldset legend {
 textarea {
   width: 90%;
   height: 6em;
+  /* www.sitepoint.com/blogs/2010/08/20/ie-remove-textarea-scrollbars/ */
+  overflow: auto;
 }
 
 .placeholder {
@@ -471,7 +542,6 @@ button {
   width: auto;
   overflow: visible;
 }
-
 
 /******************************
 `Layout & Design
@@ -553,5 +623,51 @@ aside nav li a:hover {
   background-color: #ffc;
 }
 
-p.slab { font-family: "museo-sans-1", "museo-sans-2", helvetica, arial, serif; }
-p.sans { font-family: "museo-slab-1", "museo-slab-2", helvetica, arial, serif; }
+/******************************
+`Non-semantic helper classes
+******************************/
+
+/* for image replacement */
+.ir { 
+  display: block; 
+  text-indent: -999em; 
+  overflow: hidden; 
+  background-repeat: 
+  no-repeat; 
+  text-align: left; 
+  direction: ltr;
+}
+ 
+/* Hide for both screenreaders and browsers
+   css-discuss.incutio.com/wiki/Screenreader_Visibility */
+.hidden { display: none; visibility: hidden; }
+ 
+/* Hide only visually, but have it available for screenreaders
+   www.webaim.org/techniques/css/invisiblecontent/& j.mp/visuallyhidden  */
+.visuallyhidden { 
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}
+ 
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible { 
+  visibility: hidden; 
+}
+ 
+/* j.mp/bestclearfix */
+.clearfix:before, .clearfix:after {
+  content: "\0020"; 
+  display: block; 
+  height: 0; 
+  visibility: hidden; 
+}
+ 
+.clearfix:after { 
+  clear: both;
+}
+
+.clearfix { 
+  /* Fix clearfix: blueprintcss.lighthouseapp.com/projects/15318/tickets/5-extra-margin-padding-bottom-of-page */
+  zoom: 1; 
+}
