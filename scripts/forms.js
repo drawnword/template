@@ -9,11 +9,11 @@ function protectSubmitButtons() {
 }
 
 function detectCardType() {
-  // Look for a card type drop down
-  
-  // Make it invisible
+  // Find and hide the card drop down
   
   // Insert black and white Card Brand images
+  
+    // If the card # is present, default to the colored image to handle page reloads
   
   // Add event handler to credit card field
 }
