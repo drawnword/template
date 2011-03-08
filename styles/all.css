@@ -170,6 +170,23 @@ td {
   padding: 2px 5px;
 }
 
+table .quantity {
+  
+}
+
+table .currency {
+  
+}
+
+td.currency:before {
+  content: '$';
+}
+
+table .quantity,
+table .currency {
+  text-align: right;
+}
+
 ul, ol {
   display: block;
   margin-left: 1.5em;
