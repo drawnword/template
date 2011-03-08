@@ -157,6 +157,7 @@ table {
 }
 
 table caption {
+  font-weight: bold;
   text-align: left;
 }
 
@@ -531,6 +532,11 @@ and (max-device-width : 480px) {
   #header nav li a {
     display: block;
     padding: 4px 0;
+  }
+  
+  /* For hiding columns when viewing large tables on small devices */
+  table .secondary {
+    display: none;
   }
 }
 
